@@ -21,6 +21,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    text-decoration: none;
+    color: #222;
+    letter-spacing: 2px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -46,3 +49,21 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+/*header*/
+.header_con{ width: 100%; height: 80px; background-color: #000; padding: 15px 7%; box-sizing: border-box; overflow: hidden; position: relative;}
+
+.header_con .left_nav{ float: left;}
+.header_con .left_nav li{ float: left; padding-right: 32px;}
+.header_con .left_nav li a{ display: block; color: #fff; font-size: 14px; line-height: 50px;}
+
+.header_con .logo{ width: 185px; height: 43px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.header_con .logo a{ display: block; height: 43px; background: url(../img/logo/Jo_Malone_logo.png) no-repeat; background-size: cover; text-indent: -9999px;}
+
+.header_con .right_nav{ float: right;}
+.header_con .right_nav li{ float: left; padding-right: 32px;}
+.header_con .right_nav li a{ display: block; color: #fff; font-size: 14px; line-height: 50px;}
+.header_con .right_nav li.cart{ padding: 12.5px 0; }
+.header_con .right_nav li.cart a{ display: block; height: 25px; background-color: #fff; border-radius: 100%;}
+.header_con .right_nav li.cart a span{ display: block; width: 25px; height: 25px; font-weight: bold;line-height: 25px; text-align: center;}

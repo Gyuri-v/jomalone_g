@@ -74,6 +74,7 @@ table {
 .txt_wrap p{ font-size: 14px; line-height: 30px;}
 .txt_wrap em{ display: block; font-size: 18px; font-weight: 400;}
 .txt_wrap strong{ display: block; font-size: 28px; font-weight: 700; line-height: 48px;}
+.txt_wrap h3{ display: block; font-size: 36px; font-weight: 700; line-height: 48px;}
 .txt_wrap .more{ display: inline-block; margin-top: 20px; padding: 5px 30px; border: 1px solid #000; border-radius: 3px;}
 
 .pro_txt{ padding: 30px 0; text-align: center; }
@@ -133,7 +134,7 @@ table {
 .main_care .tit_wrap h3 span{ display: block; font-size: 28px; font-weight: 700; line-height: 36px;}
 .main_care .tit_wrap h3>span{ margin: 20px 0;}
 .main_care .tit_wrap .vertical_line{  width: 2px; height: 18vw; margin: 60px auto; background-color: #000;}
-.main_care .tit_wrap .horizontal_line{  width: 30vw; height: 2px; margin: 0 30px;  background-color: #000; position: absolute; top: 50%;}
+.main_care .tit_wrap .horizontal_line{  width: 30vw; height: 2px; margin: -50px 30px 0;  background-color: #000; position: absolute; top: 50%;}
 .main_care .tit_wrap .horizontal_line.h_left{ left: 0; }
 .main_care .tit_wrap .horizontal_line.h_right{ right: 0; }
 .main_care .tit_wrap .more a{ display: inline-block; background-color: #000; border-radius: 3px; padding: 10px 30px; color: #fff; font-size: 14px; margin-top: 50px;}
@@ -145,10 +146,26 @@ table {
 .main_frag .txt_wrap{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 .main_frag .txt_wrap strong, .main_frag .txt_wrap em, .main_frag .txt_wrap p{ color: #fff; }
 .main_frag .txt_wrap .more{ background-color: #fff; border: 0;}
-.main_frag .frag_bottom{ width: 100%; margin-top: -300px;}
-.main_frag .frag_bottom ul{ overflow: hidden;}
-.main_frag .frag_bottom ul li{ width: 7.69%; height: 500px;  float: left;}
-.main_frag .frag_bottom ul li.black{ background-color: #000;}
-.main_frag .frag_bottom ul li.white{ background-color: #d5d4d2;}
+.main_frag .bottom{ width: 100%; margin-top: -300px;}
+.main_frag .bottom ul{ overflow: hidden;}
+.main_frag .bottom ul li{ width: 7.69%; height: 500px;  float: left;}
+.main_frag .bottom ul li.black{ background-color: #000;}
+.main_frag .bottom ul li.white{ background-color: #d5d4d2;}
 
 
+/*main_gift*/
+.main_gift{ width: 100%; padding: 100px 0;}
+.main_gift .list{ width: 80%; margin: auto;}
+.main_gift .list ul{ overflow: hidden; }
+.main_gift .list ul li{ width: 33.33%; float: left; padding: 50px 30px; box-sizing: border-box; }
+/*.main_gift .list ul li.list1{ margin-top : 0;;}*/
+.main_gift .list ul li.list2{ margin-top : 100px;;}
+.main_gift .list ul li.list3{ margin-top : 50px;;}
+.main_gift .list ul li a{ display: block; }
+.main_gift .list ul li a .img_wrap{ width: 100%; height: 450px; }
+.main_gift .list ul li.list1 a .img_wrap{ background: url(../img/bg/bg_gift_img1.jpg) no-repeat; background-position: center; background-size: cover;}
+.main_gift .list ul li.list2 a .img_wrap{ background: url(../img/bg/bg_gift_img2.jpg) no-repeat; background-position: center; background-size: cover;}
+.main_gift .list ul li.list3 a .img_wrap{ background: url(../img/bg/bg_gift_img3.jpg) no-repeat; background-position: center; background-size: cover;}
+.main_gift .list ul li a .txt_wrap{ padding: 30px 0;}
+.main_gift .list ul li a .txt_wrap strong{ min-height: 64px; line-height: 32px;}
+.main_gift .list ul li a .txt_wrap .more{ margin-top: 10px; border: 0; font-size: 14px; text-decoration: underline;}

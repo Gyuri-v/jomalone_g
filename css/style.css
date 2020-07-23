@@ -123,12 +123,15 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
 /*.main_vis .video-foreground vedio{ position: absolute; top:0; left: 0; width: 100%; height: 100%;}*/
 /*.main_vis iframe{ width: 100%; height: 100%; position: absolute; top: 0; left: 0;}*/
 /*.main_vis .bg{ width: 100%; height: 100%; background: url(../img/bg/bg_vis.jpg) no-repeat; background-size: cover; background-position: center;opacity: 0.7; background-attachment: fixed;}*/
-.video-background {width: 100%;height: 100vh;min-width: 1100px;min-height: 700px;overflow: hidden;position: relative;z-index: 2;}
+.video-background{width: 100%;height: 100vh;min-width: 1100px;min-height: 700px;overflow: hidden;position: relative;z-index: 2;}
 .video-foreground,
 .video-background video {position: absolute;top: 0;left: 0;width: 100%;height: 100%;pointer-events: none;}
 @media (min-aspect-ratio: 16/9) {.video-foreground {height: 300%;top: -100%;}}
 @media (max-aspect-ratio: 16/9) {.video-foreground {width: 300%;left: -100%;}}
+.img-background{width: 100%;height: 100vh;min-width: 1100px;min-height: 700px;overflow: hidden;position: relative;z-index: 2; display: none;}
+.img-background .img_wrap{ width: 100%; height: 100%; background: url(../img/bg/bg_vis_mobile.jpg) no-repeat; background-position: center; background-size: cover;}
 .fixx {position: fixed; top: 0; left: 0; width: 100%; height: 100%;}
+
 .main_vis .txt_wrap{ position: absolute; top: 50%; left: 0; width: 100%; display: table-cell; vertical-align: middle; z-index: 9;}
 .main_vis .txt_wrap h3, .main_vis .txt_wrap em, .main_vis .txt_wrap p{ color: #fff;}
 
@@ -254,6 +257,7 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
     .main_col1 .inner,.main_best .inner,.main_col2 .inner,.main_care .inner,.main_frag .inner,.main_gift .list{ width: 90%;}
     /******/
     .video-background { min-width: 100%;}
+    .img-background { min-width: 100%;}
 }
 @media screen and ( max-width:1024px ) {
     .header_gnb .logo { width: 185px; height: 43px; }
@@ -293,6 +297,8 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
 @media screen and ( max-width: 768px ){
     .header_gnb .left_nav, .header_gnb .right_nav{ display: none;}
     .header_gnb .btn_nav{ display: block;}
+    .img-background{ display: block;}
+    .video-background{ display: none;}
     .main_col1 .img_wrap{ height: 50vw;}
     .main_best .swiper-slide img { width: 80%; display: block; margin:  auto;}
     .main_col2 .left { width: 100%; float: none; padding-right: 0; padding-bottom: 30px;}

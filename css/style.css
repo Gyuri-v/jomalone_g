@@ -265,37 +265,42 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
 
 
 @media screen and ( max-width:1200px ){
+    /*header*/
     .header_gnb{ padding: 15px 5%;}
+    /*main*/
     .main_col1 .inner,.main_best .inner,.main_col2 .inner,.main_care .inner,.main_frag .inner,.main_gift .list{ width: 90%;}
     /*main_vis*/
     .video-background { min-width: 100%;}
     .img-background { min-width: 100%;}
 }
 @media screen and ( max-width:1024px ) {
+    /*header*/
+    .header_gnb{ padding: 15px 20px;}
     .header_gnb .logo { width: 185px; height: 43px; }
     .header_gnb .logo a { height: 43px;}
-    .header_gnb{ padding: 15px 20px;}
-    .main_col1,.main_best,.main_col2,.main_care,.main_frag,.main_gift{ padding: 70px 20px; box-sizing: border-box;}
-    .main_col1 .inner,.main_best .inner,.main_col2 .inner,.main_care .inner,.main_frag .inner,.main_gift .list{ width: 100%;}
     .header_gnb .left_nav>li{ padding-right: 18px;}
     .header_gnb .right_nav li{ padding-right: 18px;}
-    
+    /*main*/
+    .main_col1,.main_best,.main_col2,.main_care,.main_frag,.main_gift{ padding: 70px 20px; box-sizing: border-box;}
+    .main_col1 .inner,.main_best .inner,.main_col2 .inner,.main_care .inner,.main_frag .inner,.main_gift .list{ width: 100%;}
+    /*main txt*/
     .txt_wrap h3{ font-size: 28px; line-height: 36px;}
     .txt_wrap strong{ font-size: 20px; line-height: 30px;}
     .txt_wrap em{font-size: 16px; }
     .txt_wrap p{ font-size: 14px; line-height: 24px;}
     .txt_wrap .more a{ font-size: 14px;}
-    .main_care .tit_wrap strong{ font-size: 16px; line-height: 20px;}
-    .main_care .tit_wrap h3 span{ font-size: 28px; line-height: 36px;}
-    .main_care .tit_wrap h3>span{ margin: 20px 0;}
-    
+    /*main_col1*/
     .main_col1 .inner{ padding: 30px;}
     .main_col1 .img_wrap{ height: 35vw;}
+    /*main_care*/
     .main_care .care_product li{ padding: 30px 20px;}
     .main_care .care_product li.care_pro_left{ padding-right: 100px;}
     .main_care .care_product li.care_pro_right{ padding-left: 100px;}
     .main_care .tit_wrap .vertical_line{  height: 18vw; }
     .main_care .tit_wrap .horizontal_line{ display: none;}
+    .main_care .tit_wrap strong{ font-size: 16px; line-height: 20px;}
+    .main_care .tit_wrap h3 span{ font-size: 28px; line-height: 36px;}
+    .main_care .tit_wrap h3>span{ margin: 20px 0;}
     /*main_gift*/
     .main_gift .list li { width: 50%; padding: 0; position: relative; }
     .main_gift .list li a .txt_wrap{ width: 100%; padding: 15px; position: absolute; bottom: 0;; left: 0; }
@@ -313,6 +318,7 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
     
 }
 @media screen and ( max-width: 768px ){
+    /*header*/
     .header_gnb .left_nav, .header_gnb .right_nav{ display: none;}
     .header_gnb .btn_nav{ display: block;}
     /*main_vis*/
@@ -340,9 +346,6 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
     .main_gift .list li.list1 a .img_wrap{ height: 300px; background-position: top;}
     .main_gift .list li.list2 a .img_wrap,
     .main_gift .list li.list3 a .img_wrap{ height: 300px;}
-    
-    
-    
     /*footer*/
     .footer .footer_top .footer_nav ul li{ float: none; padding: 5px 0; }
     .footer .footer_bottom p{ font-size: 14px;}
@@ -351,6 +354,7 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
 @media screen and ( max-width: 480px ){
     /*main*/
     .main_col1,.main_best,.main_col2,.main_care,.main_frag,.main_gift{ padding: 70px 10px;}
+    /*main txt*/
     .txt_wrap h3{ font-size: 20px; line-height: 28px;}
     .txt_wrap strong{ font-size: 16px; line-height: 20px;}
     .txt_wrap p{ line-height: 20px;}

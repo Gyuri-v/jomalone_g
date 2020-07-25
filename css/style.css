@@ -201,7 +201,19 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
 .main_care .tit_wrap .horizontal_line{  width: 25vw; height: 2px; margin: -50px 30px 0;  background-color: #000; position: absolute; top: 50%;}
 .main_care .tit_wrap .horizontal_line.h_left{ left: 0; }
 .main_care .tit_wrap .horizontal_line.h_right{ right: 0; }
-.main_care .tit_wrap .more a{ display: inline-block; background-color: #000; border-radius: 3px; padding: 10px 30px; color: #fff; font-size: 14px; margin-top: 50px;}
+.main_care .tit_wrap .more a{ display: inline-block; border: 1px solid #000; border-radius: 3px; padding: 10px 30px; color: #fff; font-size: 14px; margin-top: 50px; position: relative; overflow: hidden;
+    transition: 0.3s ease-in-out; 
+    -moz-transition: 0.3s ease-in-out; 
+    -ms-transition: 0.3s ease-in-out; 
+    -o-transition: 0.3s ease-in-out;}
+.main_care .tit_wrap .more a::before{ content: ''; width: 100%; height: 100%; background-color: #000; position: absolute; top: 0; left: 0; z-index: -1; }
+.main_care .tit_wrap .more a::after{ content: ''; width: 100%; height: 100%; background-color: #fff; position: absolute; top: 100%; left: 0; z-index: -1;
+    transition: 0.3s ease-in-out; 
+    -moz-transition: 0.3s ease-in-out; 
+    -ms-transition: 0.3s ease-in-out; 
+    -o-transition: 0.3s ease-in-out;}
+.main_care .tit_wrap .more:hover a{ color: #000; background-color: transparent;}
+.main_care .tit_wrap .more:hover a:after{ top: 0;}
 
 /*main_frag*/
 .main_frag{ width: 100%; padding: 100px 0; position: relative; }
@@ -297,23 +309,30 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
 @media screen and ( max-width: 768px ){
     .header_gnb .left_nav, .header_gnb .right_nav{ display: none;}
     .header_gnb .btn_nav{ display: block;}
+    /*main_vis*/
     .img-background{ display: block;}
     .video-background{ display: none;}
+    /*main_col1*/
     .main_col1 .img_wrap{ height: 50vw;}
+    /*main_best*/
     .main_best .swiper-slide img { width: 80%; display: block; margin:  auto;}
+    /*main_col2*/
     .main_col2 .left { width: 100%; float: none; padding-right: 0; padding-bottom: 30px;}
     .main_col2 .left .col2_left_img { width: 80%; height: 400px; background-position: top; }
     .main_col2 .right { width: 100%; float: none; padding-left: 100px; padding-bottom: 50px; }
     .main_col2 .right .txt_wrap { padding: 10px 0 40px; }
     .main_col2 .right .col2_right_img{ width: 100%; height: 300px;}
+    /*main_care*/
     .main_care .care_product li{ padding: 20px 0;}
     .main_care .care_product li.care_pro_left{ padding-right: 50px;}
     .main_care .care_product li.care_pro_right{ padding-left: 50px;}
     .main_care .tit_wrap{ top: -20px;}
+    /*main_frag*/
     .main_frag .inner{ height: 70vw;}
     .main_frag .bg{ background-position: left; }
     .main_frag .bottom ul li{ height: 50vw; }
     .main_frag .txt_wrap { width: 100%; top: 50%; left: 0; transform: translate(0, -50%);}
+    /*main_gift*/
     .main_gift .list li { width: 50%; padding: 0; position: relative; }
     .main_gift .list li a .txt_wrap{ width: 100%; padding: 15px; position: absolute; bottom: 0;; left: 0; }
     .main_gift .list li a .txt_wrap span { display: none;}
@@ -323,7 +342,7 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
     .main_gift .list li.list1 a .img_wrap{ height: 60vw;}
     .main_gift .list li.list2 a .img_wrap{ height: 30vw;}
     .main_gift .list li.list3 a .img_wrap{ height: 30vw;}
-    
+    /*footer*/
     .footer .footer_top .footer_nav ul li{ float: none; padding: 5px 0; }
     .footer .footer_bottom p{ font-size: 14px;}
 }
@@ -333,14 +352,14 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
     .txt_wrap h3{ font-size: 20px; line-height: 28px;}
     .txt_wrap strong{ font-size: 16px; line-height: 20px;}
     .txt_wrap p{ line-height: 20px;}
+    .txt_wrap .more a { font-size: 12px;}
     .pro_txt{ padding: 10px 0; text-align: center; }
     .pro_txt .p_type{ font-size: 12px; line-height: 18px; }
     .pro_txt .p_name{ font-size: 16px; line-height: 20px;}
     .pro_txt .p_ml{ display: none;}
     .pro_txt .p_price{ font-size: 14px; line-height: 20px;}
     .pro_txt .more a{ font-size: 12px;}
-    .main_care .tit_wrap strong{ font-size: 14px; line-height: 18px; font-weight: 400;}
-    .main_care .tit_wrap h3 span{ font-size: 20px; line-height: 28px;}
+    
     
     .main_col2 .left .col2_left_img{ height: 300px;}
     .main_col2 .right{ padding-left: 50px;}
@@ -349,13 +368,17 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
     .main_best .swiper-slide img{ width: 100%;}
     
     .main_care{ padding-top: 150px;}
+    .main_care .tit_wrap{ position: inherit}
     .main_care .tit_wrap h3{ width: 100%; position: absolute; top: -80px; left: 0; }
-    .main_care .tit_wrap h3 span{ display: inline-block;}
-    .main_care .tit_wrap .vertical_line{ height: 60vw; background-color: transparent;}
-    .main_care .tit_wrap .more a{ margin-top: 20px;}
+    .main_care .tit_wrap h3 span{ display: inline-block; font-size: 20px; line-height: 28px;}
+    .main_care .tit_wrap .vertical_line{ display: none;}
+    .main_care .tit_wrap strong{ display: block; font-size: 12px; line-height: 18px; font-weight: 400;}
+    .main_care .tit_wrap strong:first-child{ display: none;}
+    .main_care .tit_wrap .more a{ margin-top: 20px; font-size: 12px;}
+    .main_care .care_product li{ width: 100%; }
     .main_care .care_product li.care_pro_left{ padding-right: 0;}
     .main_care .care_product li.care_pro_right{ padding-left: 0;}
-    .main_care .care_product li img{ width: 100%; padding: 0 10px; box-sizing: border-box;}
+    .main_care .care_product li img{ width: 80%; padding: 0 10px; box-sizing: border-box;}
     
     .main_frag .txt_wrap{ padding: 0 20px; box-sizing: border-box;}
     .main_gift .list li{ width: 100%;}

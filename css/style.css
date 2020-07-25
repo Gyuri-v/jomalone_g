@@ -88,15 +88,23 @@ html, body{ height: 100%;}
 .container{ position: relative; z-index: 3; }
 .con_inner{ background-color: #fff; }
 
+/*main txt*/
 .txt_wrap{ text-align: center; }
 .txt_wrap h3{ display: block; font-size: 36px; font-weight: 700; line-height: 48px;}
 .txt_wrap strong{ display: block; font-size: 24px; font-weight: 700; line-height: 36px;}
 .txt_wrap em{ display: block; font-size: 18px; font-weight: 400; margin: 10px 0;}
 .txt_wrap p{ font-size: 14px; line-height: 24px; letter-spacing: 0; margin: 10px 0;}
 .txt_wrap .more{ display: inline-block; margin-top: 20px; position: relative; z-index: 1; overflow: hidden; }
-.txt_wrap .more a{ display: block; padding: 7px 30px; font-size: 12px; border: 1px solid #000; transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition: 0.3s ease-in-out; -o-transition: 0.3s ease-in-out;}
+.txt_wrap .more a{ display: block; padding: 7px 30px; font-size: 12px; border: 1px solid #000; 
+    transition: 0.3s ease-in-out; 
+    -moz-transition: 0.3s ease-in-out; 
+    -ms-transition: 0.3s ease-in-out; 
+    -o-transition: 0.3s ease-in-out;}
 .txt_wrap .more a::after{ content: ''; width: 100%; height: 100%; background-color: #000; position: absolute; top: 100%; left: 0; z-index: -1;
-transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition: 0.3s ease-in-out; -o-transition: 0.3s ease-in-out;}
+    transition: 0.3s ease-in-out; 
+    -moz-transition: 0.3s ease-in-out; 
+    -ms-transition: 0.3s ease-in-out; 
+    -o-transition: 0.3s ease-in-out;}
 .txt_wrap .more:hover a{ color: #fff;}
 .txt_wrap .more:hover a:after{ top: 0;}
 
@@ -112,7 +120,10 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
     -ms-transition: 0.3s ease-in-out; 
     -o-transition: 0.3s ease-in-out;}
 .pro_txt .more a::after{ content: ''; width: 100%; height: 100%; background-color: #000; position: absolute; top: 100%; left: 0; z-index: -1;
-transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition: 0.3s ease-in-out; -o-transition: 0.3s ease-in-out;}
+    transition: 0.3s ease-in-out; 
+    -moz-transition: 0.3s ease-in-out; 
+    -ms-transition: 0.3s ease-in-out; 
+    -o-transition: 0.3s ease-in-out;}
 .pro_txt .more:hover a{ color: #fff;}
 .pro_txt .more:hover a:after{ top: 0;}
 
@@ -138,8 +149,7 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
 /*main_col1*/
 .main_col1{ width: 100%; padding: 100px 0; position: relative;}
 .main_col1::after{ content: ''; width: 100%; height: 40%; background-color: #fff; position: absolute; bottom: 0; left: 0;}
-.main_col1 .inner{ width: 80%; background-color: #000; margin: auto; padding: 50px; box-sizing: border-box; position: relative; z-index: 9; }
-/*.main_col1 .inner.on{ margin-top: -500px; position: relative; z-index: 9;}*/
+.main_col1 .inner{ width: 1200px; background-color: #000; margin: auto; padding: 50px; box-sizing: border-box; position: relative; z-index: 9; }
 .main_col1 .txt_wrap{ padding: 0px 0 50px;}
 .main_col1 .txt_wrap p, .main_col1 .txt_wrap em, .main_col1 .txt_wrap h3{ color: #fff;}
 .main_col1 .txt_wrap .more a{ color: #fff; border: 1px solid #fff;  }
@@ -149,7 +159,7 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
 
 /*main.best*/
 .main_best{ width: 100%; padding: 100px 0; }
-.main_best .inner{ width: 80%; margin: auto;}
+.main_best .inner{ width: 1200px; margin: auto;}
 .main_best .swiper-container{ width: 100%; padding: 50px 0 80px; }
 .main_best .swiper-slide{ width: 100%;  
     transition: background 0.3s ease-in-out; 
@@ -173,7 +183,7 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
 
 /*main_col2*/
 .main_col2{ width: 100%; padding: 100px 0;}
-.main_col2 .inner{ width: 80%; margin: auto; overflow: hidden;}
+.main_col2 .inner{ width: 1200px; margin: auto; overflow: hidden;}
 .main_col2 .left{ width: 50%; float: left; padding-right: 30px; padding-bottom: 100px; box-sizing: border-box; overflow: hidden;}
 .main_col2 .left .col2_left_img{ width: 100%; height: 700px; background: url(../img/bg/bg_col2_left.jpg) no-repeat; background-size: cover; background-position: center; text-indent: -9999px; margin-left:  -100%;}
 .main_col2 .right{ width: 50%; float: right; padding-left: 30px; box-sizing: border-box;}
@@ -184,7 +194,7 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
 
 /*main_care*/
 .main_care{ width: 100%; padding: 100px 0; position: relative; z-index: 3;}
-.main_care .inner{ width: 80%; margin: auto; position: relative; margin-bottom: 100px; }
+.main_care .inner{ width: 1200px; margin: auto; position: relative; margin-bottom: 100px; }
 .main_care .care_product{ overflow: hidden; }
 .main_care .care_product li{ width: 50%; float: left; padding: 50px 30px; box-sizing: border-box;}
 .main_care .care_product li.care_pro_left{ padding-right: 150px;}
@@ -217,7 +227,7 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
 
 /*main_frag*/
 .main_frag{ width: 100%; padding: 100px 0; position: relative; }
-.main_frag .inner{ width: 80%; height: 550px; margin: auto; background-color: #000; position: relative; }
+.main_frag .inner{ width: 1200px; height: 550px; margin: auto; background-color: #000; position: relative; }
 .main_frag .bg{ width: 100%; height: 100%; background: url(../img/bg/bg_frag.jpg) no-repeat; background-size: cover; background-position: center; opacity: 1;}
 .main_frag .txt_wrap{ width: 100%; position: absolute; top: 50%; left: 0; transform: translate(0, -50%); }
 .main_frag .txt_wrap h3, .main_frag .txt_wrap em, .main_frag .txt_wrap p{ color: #fff; }
@@ -225,7 +235,7 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
 
 /*main_gift*/
 .main_gift{ width: 100%; padding: 100px 0;}
-.main_gift .list{ width: 80%; margin: auto;}
+.main_gift .list{ width: 1200px; margin: auto;}
 .main_gift .list{ overflow: hidden; margin-top: 30px; }
 .main_gift .list li{ width: 33.33%; float: left; padding: 30px; box-sizing: border-box; }
 .main_gift .list li.list2{ margin-top : 100px;;}
@@ -268,7 +278,7 @@ transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition:
     /*header*/
     .header_gnb{ padding: 15px 5%;}
     /*main*/
-    .main_col1 .inner,.main_best .inner,.main_col2 .inner,.main_care .inner,.main_frag .inner,.main_gift .list{ width: 90%;}
+    .main_col1 .inner,.main_best .inner,.main_col2 .inner,.main_care .inner,.main_frag .inner,.main_gift .list{ width: 1024px;}
     /*main_vis*/
     .video-background { min-width: 100%;}
     .img-background { min-width: 100%;}

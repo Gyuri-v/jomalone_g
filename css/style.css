@@ -311,8 +311,6 @@ html, body{ height: 100%;}
     .txt_wrap h3{ font-size: 28px; line-height: 36px;}
     .txt_wrap strong{ font-size: 20px; line-height: 30px;}
     .txt_wrap em{font-size: 16px; }
-    .txt_wrap p{ font-size: 14px; line-height: 24px;}
-    .txt_wrap .more a{ font-size: 14px;}
     /*main_col1*/
     .main_col1 .inner{ padding: 30px;}
     .main_col1 .img_wrap{ height: 350px;}
@@ -377,16 +375,13 @@ html, body{ height: 100%;}
     /*main*/
     .main_col1,.main_best,.main_col2,.main_care,.main_frag,.main_gift{ padding: 70px 10px;}
     /*main txt*/
-    .txt_wrap h3{ font-size: 20px; line-height: 28px;}
+    .txt_wrap h3{ font-size: 22px; line-height: 28px;}
     .txt_wrap strong{ font-size: 16px; line-height: 20px;}
     .txt_wrap p{ line-height: 20px;}
-    .txt_wrap .more a { font-size: 12px;}
     .pro_txt{ padding: 10px 0; text-align: center; }
     .pro_txt .p_type{ font-size: 12px; line-height: 18px; }
-    .pro_txt .p_name{ font-size: 16px; line-height: 20px;}
+    .pro_txt .p_name{ font-size: 14px; line-height: 20px;}
     .pro_txt .p_ml{ display: none;}
-    .pro_txt .p_price{ font-size: 14px; line-height: 20px;}
-    .pro_txt .more a{ font-size: 12px;}
     /*main_col1*/
     .main_col1 .inner{ padding: 20px;}
     .main_col1 .img_wrap{ height: 250px;}
@@ -399,7 +394,8 @@ html, body{ height: 100%;}
     /*main_care*/
     .main_care{ padding-top: 150px;}
     .main_care .tit_wrap{ position: inherit}
-    .main_care .tit_wrap h3{ width: 100%; position: absolute; top: -80px; left: 0; }
+    .main_care .tit_wrap h3{ width: 100%; position: absolute; top: -60px; left: 0; }
+    .main_care .tit_wrap h3>span{ margin: 10px 0}
     .main_care .tit_wrap h3 span{ display: inline-block; font-size: 20px; line-height: 28px;}
     .main_care .tit_wrap .vertical_line{ display: none;}
     .main_care .tit_wrap strong{ display: block; font-size: 12px; line-height: 18px; font-weight: 400;}
@@ -408,7 +404,7 @@ html, body{ height: 100%;}
     .main_care .care_product li{ width: 100%; }
     .main_care .care_product li.care_pro_left{ padding-right: 0;}
     .main_care .care_product li.care_pro_right{ padding-left: 0;}
-    .main_care .care_product li img{ width: 80%; padding: 0 10px; box-sizing: border-box;}
+    .main_care .care_product li img{ width: 70%; padding: 0 10px; box-sizing: border-box;}
     /*main_frag*/
     .main_frag .txt_wrap{ padding: 0 15px; box-sizing: border-box;}
     

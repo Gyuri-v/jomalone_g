@@ -155,7 +155,7 @@ html, body{ height: 100%;}
 .main_col1 .txt_wrap .more a{ color: #fff; border: 1px solid #fff;  }
 .main_col1 .txt_wrap .more a::after{ background-color: #fff;}
 .main_col1 .txt_wrap .more:hover a{ color: #000;}
-.main_col1 .img_wrap{ width: 100%; height: 25vw; background: url(../img/bg/bg_col1.jpg) no-repeat; background-size: cover; background-position: center;}
+.main_col1 .img_wrap{ width: 100%; height: 400px; background: url(../img/bg/bg_col1.jpg) no-repeat; background-size: cover; background-position: center;}
 
 /*main.best*/
 .main_best{ width: 100%; padding: 100px 0; }
@@ -201,14 +201,14 @@ html, body{ height: 100%;}
 .main_care .care_product li.care_pro_right{ padding-left: 150px;}
 .main_care .care_product li img{ width: 70%; display: block; margin: auto; }
 
-.main_care .tit_wrap{ width: 100%; text-align: center; position: absolute; top: 0; left: 0;}
+.main_care .tit_wrap{ width: 100%; height: 100%; text-align: center; position: absolute; top: 0; left: 0;}
 .main_care .tit_wrap strong{ margin: auto; font-size: 20px; font-weight: bold; line-height: 24px;}
 .main_care .tit_wrap h3 span{ display: block; font-size: 36px; font-weight: 700; line-height: 48px;}
 .main_care .tit_wrap h3>span{ margin: 20px 0;}
-.main_care .tit_wrap .vertical_line{  width: 2px; height: 15vw; margin: 60px auto; background-color: #000; position: relative;}
+.main_care .tit_wrap .vertical_line{  width: 2px; height: 220px; margin: 60px auto; background-color: #000; position: relative;}
 .main_care .tit_wrap .vertical_line.v_top{  bottom: 0;}
 .main_care .tit_wrap .vertical_line.v_top{  top: 0;}
-.main_care .tit_wrap .horizontal_line{  width: 25vw; height: 2px; margin: -50px 30px 0;  background-color: #000; position: absolute; top: 50%;}
+.main_care .tit_wrap .horizontal_line{  width: 285px; height: 2px; margin: -50px 30px 0;  background-color: #000; position: absolute; top: 50%;}
 .main_care .tit_wrap .horizontal_line.h_left{ left: 0; }
 .main_care .tit_wrap .horizontal_line.h_right{ right: 0; }
 .main_care .tit_wrap .more a{ display: inline-block; border: 1px solid #000; border-radius: 3px; padding: 10px 30px; color: #fff; font-size: 14px; margin-top: 50px; position: relative; overflow: hidden;
@@ -241,7 +241,7 @@ html, body{ height: 100%;}
 .main_gift .list li.list2{ margin-top : 100px;;}
 .main_gift .list li.list3{ margin-top : 50px;;}
 .main_gift .list li a{ display: block; }
-.main_gift .list li a .img_wrap{ width: 100%; height: 30vw; }
+.main_gift .list li a .img_wrap{ width: 100%; height: 450px; }
 .main_gift .list li.list1 a .img_wrap{ background: url(../img/bg/bg_gift_img1.jpg) no-repeat; background-position: center; background-size: cover;}
 .main_gift .list li.list2 a .img_wrap{ background: url(../img/bg/bg_gift_img2.jpg) no-repeat; background-position: center; background-size: cover;}
 .main_gift .list li.list3 a .img_wrap{ background: url(../img/bg/bg_gift_img3.jpg) no-repeat; background-position: center; background-size: cover;}
@@ -301,12 +301,12 @@ html, body{ height: 100%;}
     .txt_wrap .more a{ font-size: 14px;}
     /*main_col1*/
     .main_col1 .inner{ padding: 30px;}
-    .main_col1 .img_wrap{ height: 35vw;}
+    .main_col1 .img_wrap{ height: 350px;}
     /*main_care*/
     .main_care .care_product li{ padding: 30px 20px;}
     .main_care .care_product li.care_pro_left{ padding-right: 100px;}
     .main_care .care_product li.care_pro_right{ padding-left: 100px;}
-    .main_care .tit_wrap .vertical_line{  height: 18vw; }
+    .main_care .tit_wrap .vertical_line{  height: 18%; }
     .main_care .tit_wrap .horizontal_line{ display: none;}
     .main_care .tit_wrap strong{ font-size: 16px; line-height: 20px;}
     .main_care .tit_wrap h3 span{ font-size: 28px; line-height: 36px;}
@@ -334,8 +334,6 @@ html, body{ height: 100%;}
     /*main_vis*/
     .img-background{ display: block;}
     .video-background{ display: none;}
-    /*main_col1*/
-    .main_col1 .img_wrap{ height: 50vw;}
     /*main_best*/
     .main_best .swiper-slide img { width: 80%; display: block; margin:  auto;}
     /*main_col2*/
@@ -375,7 +373,9 @@ html, body{ height: 100%;}
     .pro_txt .p_ml{ display: none;}
     .pro_txt .p_price{ font-size: 14px; line-height: 20px;}
     .pro_txt .more a{ font-size: 12px;}
-
+    /*main_col1*/
+    .main_col1 .inner{ padding: 20px;}
+    .main_col1 .img_wrap{ height: 250px;}
     /*main_col2*/
     .main_col2 .left .col2_left_img{ height: 300px;}
     .main_col2 .right{ padding-left: 50px;}

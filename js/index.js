@@ -4,7 +4,6 @@ $(document).ready(function(){
     
     
     //header event
-    
     var screenWidth = $(window).width();
     
     if( screenWidth > 768){
@@ -55,10 +54,6 @@ $(document).ready(function(){
         el: '.main_best .swiper-scrollbar',
       },
       breakpoints: {
-        480: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-        },
         768: {
           slidesPerView: 3,
           slidesPerGroup: 3,
@@ -81,14 +76,6 @@ $(document).ready(function(){
         }
     })
     
-    
-    //main_care line scroll event    
-    $(window).scroll(function(){
-        if($(document).scrollTop()+500 >= $('.main_care').offset().top){
-//            $('.v_top').animate({ height : '15vw'});
-//            $('.v_bottom').animate({ height : '15vw'});
-        }
-    })
     
     //main_frag - ripples plugin
     $('.main_frag .bg').ripples({
@@ -137,7 +124,7 @@ $(document).ready(function(){
     //main_gift scroll event   
     if ( screenWidth > 1024 ){
         $(window).scroll(function(){
-            if($(document).scrollTop()+400 >= $('.main_gift').offset().top){
+            if($(document).scrollTop()+600 >= $('.main_gift').offset().top){
                 $('.main_gift .list1').css({transform: 'translateY(-'+($(window).scrollTop()/50-100)+'%)'});
                 $('.main_gift .list2').css({transform: 'translateY(-'+($(window).scrollTop()/50-110)+'%)'});
                 $('.main_gift .list3').css({transform: 'translateY(-'+($(window).scrollTop()/50-100)+'%)'});

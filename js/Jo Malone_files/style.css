@@ -55,39 +55,34 @@ html, body{ height: 100%;}
 
 /*header*/
 .header{ width: 100%; height: 80px; background-color: #000; padding: 15px 0; box-sizing: border-box; position: fixed; z-index: 9999; box-sizing: border-box; }
-.header .inner{ width: 1200px; margin: auto; padding: 0 15px; box-sizing: border-box; position: relative;}
+.header .inner{ width: 1200px; margin: auto; padding: 0 15px; box-sizing: border-box; }
 .header .inner::after{ content: ''; display: block; height: 0; clear: both; }
 .header .manu_bg{ display: block; width: 100%; height: 0; background-color: #000; position: absolute; top: 65px; left: 0; z-index: 9;}
 
-.header .gnb{ width: 100%; overflow: hidden; padding-right: 50px; box-sizing: border-box; }
-.header .gnb_top{ display: none; width: 100%; height: 60px; padding: 10px; box-sizing: border-box;}
-
-/*header top nav - pc*/
+.header .gnb{ width: 100%; padding-right: 50px;}
 .header .left_nav{ float: left;}
 .header .left_nav>li{ float: left; padding-right: 32px;}
 .header .left_nav>li>a{ display: block; color: #fff; font-size: 14px; line-height: 50px; position: relative;}
-.header .left_nav>li>a::before{ content: ''; width: 0; height: 1px; background-color: #999; position: absolute; bottom: 10px; left: 50%; z-index: 99;
+.header .left_nav>li>a::after{ content: ''; width: 0; height: 1px; background-color: #999; position: absolute; bottom: 10px; left: 50%; z-index: 99;
     transition: 0.3s ease-in-out; 
     -moz-transition: 0.3s ease-in-out; 
     -ms-transition: 0.3s ease-in-out; 
     -o-transition: 0.3s ease-in-out;}
-.header .left_nav>li>a:hover::before{ width: 100%; left: 0; }
+.header .left_nav>li>a:hover::after{ width: 100%; left: 0; }
 .header .right_nav{ float: right;}
 .header .right_nav li{ float: left; padding-right: 32px;}
 .header .right_nav li a{ display: block; color: #fff; font-size: 14px; line-height: 50px; position: relative; }
-.header .right_nav>li>a::before{ content: ''; width: 0; height: 1px; background-color: #999; position: absolute; bottom: 10px; left: 50%; 
+.header .right_nav>li>a::after{ content: ''; width: 0; height: 1px; background-color: #999; position: absolute; bottom: 10px; left: 50%; 
     transition: 0.3s ease-in-out; 
     -moz-transition: 0.3s ease-in-out; 
     -ms-transition: 0.3s ease-in-out; 
     -o-transition: 0.3s ease-in-out;}
-.header .right_nav>li>a:hover::before{ width: 100%; left: 0; }
+.header .right_nav>li>a:hover::after{ width: 100%; left: 0; }
 
-/*header - logo*/
 .header .logo{ width: 215px; height: 55px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .header .logo a{ display: block; height: 100%; background: url(../img/logo/Jo_Malone_logo.png) no-repeat; background-size: 100%; text-indent: -9999px;}
 
-/*header - cart*/
-.header .cart{ padding: 12.5px 0; float: left; position: absolute; top: 0; right: 30px;}
+.header .cart{ padding: 12.5px 0; float: right; }
 .header .cart a{ display: block; width: 25px; height: 25px; text-indent: -9999px; background: url(../img/icon/btn_cart.svg) no-repeat; background-size: 100%; position: relative;}
 .header .cart a span{  width: 18px; height: 18px; background-color: #fff; border-radius: 100%; color: #000; font-size: 12px; font-weight: bold; line-height: 18px; text-align: center; text-indent: 0; position: absolute; top: -11px; right: -12px; 
     transition: 0.3s ease-in-out; 
@@ -96,11 +91,9 @@ html, body{ height: 100%;}
     -o-transition: 0.3s ease-in-out;}
 .header .cart a:hover span{ width: 22px; height: 22px; line-height: 22px;}
 
-/*header - nav store*/
 .header .nav_store{ width: 100%; height: 0; position: absolute; top: 65px; left: 0; z-index: 9; overflow: hidden;}
 .header .nav_store .inner{ width: 1200px; margin: auto; padding: 15px;}
 .header .nav_store .inner nav .store_menu{ overflow: hidden;}
-.header .nav_store .inner nav .store_menu .s_m_tit{ display: none;}
 .header .nav_store .inner nav .store_menu>li{ width: 33.33%; float: left;}
 .header .nav_store .inner nav .store_menu>li>a{ display: block; color: #fff; font-size: 18px; font-weight: 400; line-height: 24px; margin: 16px 0 10px; position: relative;}
 .header .nav_store .inner nav .store_menu>li>a::after{ content: '→'; position: absolute; top: 0; right: 20px; opacity: 0; 
@@ -115,23 +108,10 @@ html, body{ height: 100%;}
 .header .nav_store .inner nav .store_s_menu li a{ display: block; padding: 0 15px; color: #999; font-size: 14px; line-height: 24px; }
 .header .nav_store .inner nav .store_s_menu li a:hover{ color: #fff;}
 
-/*header - btn_nav - mobile*/
 .header .btn_nav{ width: 40px; height: 40px; float: left; padding: 14px 5px; box-sizing: border-box; display: none;}
-.header .btn_nav a{ display: block; height: 14px; position: relative; z-index: 99999;}
-.header .btn_nav a .line1{ width: 30px; height: 2px; margin: auto; background-color: #fff; position: absolute; top: 0; 
-    transition: 0.3s ease-in-out; 
-    -moz-transition: 0.3s ease-in-out; 
-    -ms-transition: 0.3s ease-in-out; 
-    -o-transition: 0.3s ease-in-out;}
-.header .btn_nav a .line2{ width: 30px; height: 2px; margin: auto; background-color: #fff; position: absolute; bottom: 0; 
-    transition: 0.3s ease-in-out; 
-    -moz-transition: 0.3s ease-in-out; 
-    -ms-transition: 0.3s ease-in-out; 
-    -o-transition: 0.3s ease-in-out;}
-.header .btn_nav.on_m .line1{ top: 6px; transform: rotate(45deg)}
-.header .btn_nav.on_m .line2{ bottom: 6px; transform: rotate(-45deg)}
-
-
+.header .btn_nav a{ display: block; height: 14px; position: relative;}
+.header .btn_nav a .line1{ width: 30px; height: 2px; margin: auto; background-color: #fff; position: absolute; top: 0;}
+.header .btn_nav a .line2{ width: 30px; height: 2px; margin: auto; background-color: #fff; position: absolute; bottom: 0;}
 
 
 /*main*/
@@ -266,7 +246,7 @@ html, body{ height: 100%;}
     -moz-transition: 0.3s ease-in-out; 
     -ms-transition: 0.3s ease-in-out; 
     -o-transition: 0.3s ease-in-out;}
-/*.main_care .tit_wrap .more a::before{ content: ''; width: 100%; height: 100%; background-color: #000; position: absolute; top: 0; left: 0; z-index: -1; }*/
+.main_care .tit_wrap .more a::before{ content: ''; width: 100%; height: 100%; background-color: #000; position: absolute; top: 0; left: 0; z-index: -1; }
 .main_care .tit_wrap .more a::after{ content: ''; width: 100%; height: 100%; background-color: #fff; position: absolute; top: 100%; left: 0; z-index: -1;
     transition: 0.3s ease-in-out; 
     -moz-transition: 0.3s ease-in-out; 
@@ -384,32 +364,14 @@ html, body{ height: 100%;}
     .footer .footer_nav li{ padding: 0 10px 10px;}
     
 }
-@media screen and ( max-width: 768px){
+@media screen and ( max-width: 768px ){
     /*header*/
-    .header{ height: 60px; padding: 0; }
-    .header .inner{ padding: 10px;}
+    .header{ height: 60px; padding: 10px 15px; }
     .header .logo{ width: 114px; height: 40px; padding: 5px 0; box-sizing: border-box;}
-    .header .cart{ padding: 7.5px 5px; top: 10px; right: 10px; z-index: 99999;}
-/*    .header .left_nav, .header .right_nav, .header .manu_bg, .header .nav_store{ display: none;}*/
+    .header .left_nav, .header .right_nav, .header .manu_bg, .header .nav_store{ display: none;}
+    
+    .header .cart{ padding: 7.5px 5px;}
     .header .btn_nav{ display: block;}
-    .header .gnb{ width: 100%; height: 100vh; background-color: #000; padding: 0; position: fixed; top: 0; left: -100%; z-index: 9999; overflow-y: scroll;}
-    .header .gnb .gnb_top{ display: block;}
-    .header .left_nav, .header .right_nav{ float: none;}
-    .header .left_nav>li, .header .right_nav>li{ float: none; padding: 10px;}
-    .header .left_nav>li>a, .header .right_nav>li>a { font-size: 16px;}
-    .header .left_nav>li.store>a::after{ content: '→'; position: absolute; top: 0; right: 10px;}
-    
-    .header .nav_store{ height: auto; padding: 0; background-color: #000; }
-    .header .nav_store .inner{ padding: 10px 50px 30px; }
-    .header .nav_store .inner nav .store_menu .s_m_tit{ display: block; line-height: 50px; font-size: 24px; font-weight: bold; color: #fff;}
-    .header .nav_store .inner nav .store_menu .s_m_tit::after{ content: '←'; width: 30px; height: 30px; position: absolute; top: 10px; left: 17px; z-index: 9999; color: #fff; font-size: 16px; font-weight: 200;}
-    .header .nav_store .inner nav .store_menu>li{ width: 100%; float: none;}
-    .header .nav_store .inner nav .store_menu>li.nav_prom{ display: none;}
-    .header .nav_store .inner nav .store_menu>li>a{ font-size: 16px;
-    
-    }
-    
-    
     /*main_vis*/
     .img-background{ display: block;}
     .video-background{ display: none;}

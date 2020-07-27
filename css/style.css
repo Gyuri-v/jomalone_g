@@ -54,19 +54,17 @@ html, body{ height: 100%;}
 
 
 /*header*/
-.header{ width: 100%; height: 80px; background-color: #000; padding: 15px 0; box-sizing: border-box; position: fixed; z-index: 9999; box-sizing: border-box; }
+.header{ width: 100%; height: 80px; background-color: #000; padding: 15px 0; box-sizing: border-box; position: fixed; z-index: 99999; box-sizing: border-box; }
 .header .inner{ width: 1200px; margin: auto; padding: 0 15px; box-sizing: border-box; position: relative;}
 .header .inner::after{ content: ''; display: block; height: 0; clear: both; }
-.header .manu_bg{ display: block; width: 100%; height: 0; background-color: #000; position: absolute; top: 65px; left: 0; z-index: 9;}
 
 .header .gnb{ width: 100%; overflow: hidden; padding-right: 50px; box-sizing: border-box; }
-.header .gnb_top{ display: none; width: 100%; height: 60px; padding: 10px; box-sizing: border-box;}
 
 /*header top nav - pc*/
 .header .left_nav{ float: left;}
 .header .left_nav>li{ float: left; padding-right: 32px;}
 .header .left_nav>li>a{ display: block; color: #fff; font-size: 14px; line-height: 50px; position: relative;}
-.header .left_nav>li>a::before{ content: ''; width: 0; height: 1px; background-color: #999; position: absolute; bottom: 10px; left: 50%; z-index: 99;
+.header .left_nav>li>a::before{ content: ''; width: 0; height: 1px; background-color: #999; position: absolute; bottom: 10px; left: 50%; 
     transition: 0.3s ease-in-out; 
     -moz-transition: 0.3s ease-in-out; 
     -ms-transition: 0.3s ease-in-out; 
@@ -97,7 +95,8 @@ html, body{ height: 100%;}
 .header .cart a:hover span{ width: 22px; height: 22px; line-height: 22px;}
 
 /*header - nav store*/
-.header .nav_store{ width: 100%; height: 0; position: absolute; top: 65px; left: 0; z-index: 9; overflow: hidden;}
+.header .store .manu_bg{ display: block; width: 100%; height: 0; background-color: #000; position: fixed; top: 65px; left: 0; }
+.header .nav_store{ width: 100%; height: 0; position: absolute; top: 50px; left: 0;  overflow: hidden;}
 .header .nav_store .inner{ width: 1200px; margin: auto; padding: 15px;}
 .header .nav_store .inner nav .store_menu{ overflow: hidden;}
 .header .nav_store .inner nav .store_menu .s_m_tit{ display: none;}
@@ -117,7 +116,7 @@ html, body{ height: 100%;}
 
 /*header - btn_nav - mobile*/
 .header .btn_nav{ width: 40px; height: 40px; float: left; padding: 14px 5px; box-sizing: border-box; display: none;}
-.header .btn_nav a{ display: block; height: 14px; position: relative; z-index: 99999;}
+.header .btn_nav a{ display: block; height: 14px; position: relative;}
 .header .btn_nav a .line1{ width: 30px; height: 2px; margin: auto; background-color: #fff; position: absolute; top: 0; 
     transition: 0.3s ease-in-out; 
     -moz-transition: 0.3s ease-in-out; 
@@ -135,7 +134,7 @@ html, body{ height: 100%;}
 
 
 /*main*/
-.container{ position: relative; z-index: 3; }
+.container{ position: relative; z-index: 9; }
 .con_inner{ background-color: #fff; }
 
 /*main txt*/
@@ -144,7 +143,7 @@ html, body{ height: 100%;}
 .txt_wrap strong{ display: block; font-size: 24px; font-weight: 700; line-height: 36px;}
 .txt_wrap em{ display: block; font-size: 18px; font-weight: 400; margin: 10px 0;}
 .txt_wrap p{ font-size: 14px; line-height: 24px; letter-spacing: 0; margin: 10px 0;}
-.txt_wrap .more{ display: inline-block; margin-top: 20px; position: relative; z-index: 1; overflow: hidden; }
+.txt_wrap .more{ display: inline-block; margin-top: 20px; position: relative; overflow: hidden; z-index: 1; }
 .txt_wrap .more a{ display: block; padding: 7px 30px; font-size: 12px; border: 1px solid #000; 
     transition: 0.3s ease-in-out; 
     -moz-transition: 0.3s ease-in-out; 
@@ -190,7 +189,7 @@ html, body{ height: 100%;}
 .img-background .img_wrap{ width: 100%; height: 100%; background: url(../img/bg/bg_vis_mobile.jpg) no-repeat; background-position: center; background-size: cover;}
 .fixx {position: fixed; top: 0; left: 0; width: 100%; height: 100%;}
 
-.main_vis .txt_wrap{ position: absolute; top: 50%; left: 0; width: 100%; display: table-cell; vertical-align: middle; z-index: 9;}
+.main_vis .txt_wrap{ position: absolute; top: 50%; left: 0; width: 100%; display: table-cell; vertical-align: middle; z-index: 3;}
 .main_vis .txt_wrap h3, .main_vis .txt_wrap em, .main_vis .txt_wrap p{ color: #fff;}
 
 /*main_col1*/
@@ -240,7 +239,7 @@ html, body{ height: 100%;}
 .main_col2 .right .col2_right_img .img_wrap{ width: 100%; height: 100%; background: url(../img/bg/bg_col2_right.jpg) no-repeat; background-size: cover; background-position: center; text-indent: -9999px; margin-left: -100%; }
 
 /*main_care*/
-.main_care{ width: 100%; padding: 100px 0; position: relative; z-index: 3;}
+.main_care{ width: 100%; padding: 100px 0; position: relative;}
 .main_care .inner{ width: 1200px; margin: auto; position: relative; margin-bottom: 100px; }
 .main_care .care_product{ overflow: hidden; }
 .main_care .care_product li{ width: 50%; float: left; padding: 50px 30px; box-sizing: border-box;}
@@ -258,7 +257,7 @@ html, body{ height: 100%;}
 .main_care .tit_wrap .horizontal_line span{ display: block; width: 100%; height: 2px; background-color: #000; position: absolute;}
 .main_care .tit_wrap .horizontal_line.h_left{ left: 0; }
 .main_care .tit_wrap .horizontal_line.h_right{ right: 0; }
-.main_care .tit_wrap .more a{ display: inline-block; border: 1px solid #000; background-color: #000; padding: 10px 30px; color: #fff; font-size: 14px; margin-top: 50px; position: relative; z-index: 9; overflow: hidden;
+.main_care .tit_wrap .more a{ display: inline-block; border: 1px solid #000; background-color: #000; padding: 10px 30px; color: #fff; font-size: 14px; margin-top: 50px; position: relative; z-index: 1; overflow: hidden;
     transition: 0.3s ease-in-out; 
     -moz-transition: 0.3s ease-in-out; 
     -ms-transition: 0.3s ease-in-out; 
@@ -292,12 +291,12 @@ html, body{ height: 100%;}
 .main_gift .list li a .txt_wrap strong{ min-height: 64px; line-height: 32px;}
 .main_gift .list li a .txt_wrap .more{ margin-top: 10px; border: 0; font-size: 12px; border-bottom: 1px solid #000; padding-bottom: 5px; }
 .main_gift .list li a .txt_wrap span{ display: block; position: absolute; top: 45px; width: 40px; height: 2px; background-color: #222;}
-.main_gift .list li a .txt_wrap .line_left{ left: 0; }
-.main_gift .list li a .txt_wrap .line_right{ right: 0; }
+.main_gift .list li a .txt_wrap span.line_left{ left: 0; }
+.main_gift .list li a .txt_wrap span.line_right{ right: 0; }
 
 
 /*footer*/
-.footer{ width: 100%; background-color: #000; position: relative; z-index: 3;}
+.footer{ width: 100%; background-color: #000; position: relative; z-index: 9;}
 .footer .inner{ width: 1200px; margin: auto; padding: 10px 0; }
 .footer .footer_top{ width: 100%; overflow: hidden; padding: 30px 15px; box-sizing: border-box; border-bottom: 1px solid #444;}
 .footer .footer_top .footer_logo{ width: 168px; height: 40px; float: left;}
@@ -340,9 +339,9 @@ html, body{ height: 100%;}
     .header .logo { width: 185px; height: 43px; }
     .header .left_nav>li{ padding-right: 18px;}
     .header .right_nav li{ padding-right: 18px;}
-    .header .nav_store .inner nav .main_menu>li.nav_prom .img_wrap{ width: 200px; height: 200px;}
+    .header .nav_store .inner nav .store_menu>li.nav_prom .img_wrap{ width: 200px; height: 200px;}
     /*main*/
-    .header .nav_store{ padding: 0 30px; box-sizing: border-box;}
+    .header .nav_store{ padding: 0 20px; box-sizing: border-box;}
     .main_col1,.main_best,.main_col2,.main_care,.main_frag,.main_gift{ padding: 70px 20px; box-sizing: border-box;}
     .header .inner, .header .nav_store .inner,.main_col1 .inner,.main_best .inner,.main_col2 .inner,.main_care .inner,.main_frag .inner,.main_gift .list{ width: 100%;}
     /*main txt*/
@@ -383,19 +382,18 @@ html, body{ height: 100%;}
     .header{ height: 60px; padding: 0; }
     .header .inner{ padding: 10px;}
     .header .logo{ width: 114px; height: 40px; padding: 5px 0; box-sizing: border-box;}
-    .header .cart{ padding: 7.5px 5px; top: 10px; right: 10px; z-index: 99999;}
+    .header .cart{ padding: 7.5px 5px; top: 10px; right: 10px;}
     .header .btn_nav{ display: block;}
-    .header .gnb{ width: 100%; height: 100vh; background-color: #000; padding: 0; position: fixed; top: 0; left: -100%; z-index: 9999; overflow-y: scroll;}
-    .header .gnb .gnb_top{ display: block;}
+    .header .gnb{ width: 100%; height: 100vh; background-color: #000; padding: 60px 0 0; position: fixed; top: 0; left: -100%; z-index: -1; overflow-y: scroll;}
     .header .left_nav, .header .right_nav{ float: none;}
     .header .left_nav>li, .header .right_nav>li{ float: none; padding: 10px;}
     .header .left_nav>li>a, .header .right_nav>li>a { font-size: 16px;}
     .header .left_nav>li.store>a::after{ content: '→'; position: absolute; top: 0; right: 10px;}
     
-    .header .nav_store{ height: auto; padding: 0; background-color: #000; }
+    .header .nav_store{ height: auto; padding: 0; background-color: #000; top: 60px;  }
     .header .nav_store .inner{ padding: 10px 50px 30px; }
     .header .nav_store .inner nav .store_menu .s_m_tit{ display: block; line-height: 50px; font-size: 24px; font-weight: bold; color: #fff;}
-    .header .nav_store .inner nav .store_menu .s_m_tit::after{ content: '←'; width: 30px; height: 30px; position: absolute; top: 10px; left: 17px; z-index: 9999; color: #fff; font-size: 16px; font-weight: 200;}
+    .header .nav_store .inner nav .store_menu .s_m_tit::after{ content: '←'; position: absolute; top: 10px; left: 17px; color: #fff; font-size: 16px; font-weight: 200;}
     .header .nav_store .inner nav .store_menu>li{ width: 100%; float: none;}
     .header .nav_store .inner nav .store_menu>li.nav_prom{ display: none;}
     .header .nav_store .inner nav .store_menu>li>a{ font-size: 16px;}

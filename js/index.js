@@ -7,7 +7,7 @@ $(document).ready(function(){
     var screenWidth = $(window).width();
     
     if( screenWidth > 768){
-    // store hover event
+      // store hover event
         $('.store').hover(function(){
             $('.manu_bg').stop().animate({height:'380px'},300);
             $('.nav_store').stop().animate({height:'380px'},300);
@@ -17,7 +17,7 @@ $(document).ready(function(){
         })
     }
     if( screenWidth <= 768){
-    // nav click event
+      // nav click event
         $('.btn_nav').click(function(){
             if( $(this).hasClass('on_m')){
                 $('.btn_nav').removeClass('on_m');
@@ -28,10 +28,13 @@ $(document).ready(function(){
                 $('.btn_nav').addClass('on_m');
                 $('body').css({overflow:'hidden'})
                 $('.gnb').animate({left:'0'});
+                $('.left_nav').animate({marginLeft:'0'},300);
+                $('.right_nav').animate({marginLeft:'0'},300);
+                $('.nav_store').fadeOut();
             }
         })
         
-    // nav store event
+      // nav store event
         $('.nav_store').hide();
         $('.store>a').click(function(){
             $('.left_nav').animate({marginLeft:'100%'},300);

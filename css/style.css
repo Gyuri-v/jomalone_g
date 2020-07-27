@@ -280,12 +280,9 @@ html, body{ height: 100%;}
 .main_frag .txt_wrap .more a{ border: 1px solid #fff; color: #fff;}
 
 /*main_gift*/
-.main_gift{ width: 100%; padding: 100px 0;}
-.main_gift .list{ width: 1200px; margin: auto;}
-.main_gift .list{ overflow: hidden; margin-top: 30px; }
+.main_gift{ width: 100%; padding: 100px 0 0;}
+.main_gift .list{ width: 1200px; margin: auto; overflow: hidden; padding-top: 150px; }
 .main_gift .list li{ width: 33.33%; float: left; padding: 30px; box-sizing: border-box; }
-.main_gift .list li.list2{ margin-top : 100px;;}
-.main_gift .list li.list3{ margin-top : 50px;;}
 .main_gift .list li a{ display: block; }
 .main_gift .list li a .img_wrap{ width: 100%; height: 450px; }
 .main_gift .list li.list1 a .img_wrap{ background: url(../img/bg/bg_gift_img1.jpg) no-repeat; background-position: center; background-size: cover;}
@@ -364,6 +361,7 @@ html, body{ height: 100%;}
     .main_care .tit_wrap h3 span{ font-size: 28px; line-height: 36px;}
     .main_care .tit_wrap h3>span{ margin: 20px 0;}
     /*main_gift*/
+    .main_gift .list{ padding-top: 50px; }
     .main_gift .list li { width: 50%; padding: 0; position: relative; }
     .main_gift .list li a .txt_wrap{ width: 100%; padding: 15px; position: absolute; bottom: 0;; left: 0; }
     .main_gift .list li a .txt_wrap span { display: none;}

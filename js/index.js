@@ -122,7 +122,7 @@ $(document).ready(function(){
 		$('.main_frag .bg').ripples('pause');
 	});
 
-	// Automatic drops
+	   // Automatic drops
 	setInterval(function() {
 		var $el = $('.main_frag .bg');
 		var x = Math.random() * $el.outerWidth();
@@ -132,4 +132,18 @@ $(document).ready(function(){
 
 		$el.ripples('drop', x, y, dropRadius, strength);
 	}, 400);
+    
+    
+    //main_gift scroll event   
+    if ( screenWidth > 1024 ){
+        $(window).scroll(function(){
+            if($(document).scrollTop()+400 >= $('.main_gift').offset().top){
+                $('.main_gift .list1').css({transform: 'translateY(-'+($(window).scrollTop()/50-100)+'%)'});
+                $('.main_gift .list2').css({transform: 'translateY(-'+($(window).scrollTop()/50-110)+'%)'});
+                $('.main_gift .list3').css({transform: 'translateY(-'+($(window).scrollTop()/50-100)+'%)'});
+            }
+        })  
+    }
+    
+    
 })

@@ -181,9 +181,6 @@ html, body{ height: 100%;}
 
 /*main_vis*/
 .main_vis{ width: 100%; height: 100%; background-color: #000; position: relative; display: table;}
-/*.main_vis .video-foreground vedio{ position: absolute; top:0; left: 0; width: 100%; height: 100%;}*/
-/*.main_vis iframe{ width: 100%; height: 100%; position: absolute; top: 0; left: 0;}*/
-/*.main_vis .bg{ width: 100%; height: 100%; background: url(../img/bg/bg_vis.jpg) no-repeat; background-size: cover; background-position: center;opacity: 0.7; background-attachment: fixed;}*/
 .video-background{width: 100%;height: 100vh;min-width: 1100px;min-height: 700px;overflow: hidden;position: relative;z-index: 2;}
 .video-foreground,
 .video-background video {position: absolute;top: 0;left: 0;width: 100%;height: 100%;pointer-events: none;}
@@ -261,19 +258,18 @@ html, body{ height: 100%;}
 .main_care .tit_wrap .horizontal_line{  width: 35%; height: 2px; margin: -50px 30px 0;  background-color: #000; position: absolute; top: 50%;}
 .main_care .tit_wrap .horizontal_line.h_left{ left: 0; }
 .main_care .tit_wrap .horizontal_line.h_right{ right: 0; }
-.main_care .tit_wrap .more a{ display: inline-block; border: 1px solid #000; padding: 10px 30px; color: #fff; font-size: 14px; margin-top: 50px; position: relative; overflow: hidden;
+.main_care .tit_wrap .more a{ display: inline-block; border: 1px solid #000; background-color: #000; padding: 10px 30px; color: #fff; font-size: 14px; margin-top: 50px; position: relative; z-index: 9; overflow: hidden;
     transition: 0.3s ease-in-out; 
     -moz-transition: 0.3s ease-in-out; 
     -ms-transition: 0.3s ease-in-out; 
     -o-transition: 0.3s ease-in-out;}
-/*.main_care .tit_wrap .more a::before{ content: ''; width: 100%; height: 100%; background-color: #000; position: absolute; top: 0; left: 0; z-index: -1; }*/
-.main_care .tit_wrap .more a::after{ content: ''; width: 100%; height: 100%; background-color: #fff; position: absolute; top: 100%; left: 0; z-index: -1;
+.main_care .tit_wrap .more a::before{ content: ''; width: 100%; height: 100%; background-color: #fff; position: absolute; top: 100%; left: 0; z-index: -1;
     transition: 0.3s ease-in-out; 
     -moz-transition: 0.3s ease-in-out; 
     -ms-transition: 0.3s ease-in-out; 
     -o-transition: 0.3s ease-in-out;}
-.main_care .tit_wrap .more:hover a{ color: #000; background-color: transparent;}
-.main_care .tit_wrap .more:hover a:after{ top: 0;}
+.main_care .tit_wrap .more a:hover{ color: #000; background-color: transparent;}
+.main_care .tit_wrap .more a:hover:before{ top: 0;}
 
 /*main_frag*/
 .main_frag{ width: 100%; padding: 100px 0; position: relative; }
@@ -390,7 +386,6 @@ html, body{ height: 100%;}
     .header .inner{ padding: 10px;}
     .header .logo{ width: 114px; height: 40px; padding: 5px 0; box-sizing: border-box;}
     .header .cart{ padding: 7.5px 5px; top: 10px; right: 10px; z-index: 99999;}
-/*    .header .left_nav, .header .right_nav, .header .manu_bg, .header .nav_store{ display: none;}*/
     .header .btn_nav{ display: block;}
     .header .gnb{ width: 100%; height: 100vh; background-color: #000; padding: 0; position: fixed; top: 0; left: -100%; z-index: 9999; overflow-y: scroll;}
     .header .gnb .gnb_top{ display: block;}
@@ -405,10 +400,7 @@ html, body{ height: 100%;}
     .header .nav_store .inner nav .store_menu .s_m_tit::after{ content: '←'; width: 30px; height: 30px; position: absolute; top: 10px; left: 17px; z-index: 9999; color: #fff; font-size: 16px; font-weight: 200;}
     .header .nav_store .inner nav .store_menu>li{ width: 100%; float: none;}
     .header .nav_store .inner nav .store_menu>li.nav_prom{ display: none;}
-    .header .nav_store .inner nav .store_menu>li>a{ font-size: 16px;
-    
-    }
-    
+    .header .nav_store .inner nav .store_menu>li>a{ font-size: 16px;}
     
     /*main_vis*/
     .img-background{ display: block;}

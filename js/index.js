@@ -8,7 +8,7 @@ $(document).ready(function(){
     var screenWidth = $(window).width();
     
     if( screenWidth > 768){
-        // store hover event
+    // store hover event
         $('.store').hover(function(){
             $('.manu_bg').stop().animate({height:'380px'},300);
             $('.nav_store').stop().animate({height:'380px'},300);
@@ -18,7 +18,7 @@ $(document).ready(function(){
         })
     }
     if( screenWidth <= 768){
-        // nav click event
+    // nav click event
         $('.btn_nav').click(function(){
             if( $(this).hasClass('on_m')){
                 $('.btn_nav').removeClass('on_m');
@@ -32,7 +32,7 @@ $(document).ready(function(){
             }
         })
         
-        // nav store event
+    // nav store event
         $('.nav_store').hide();
         $('.store>a').click(function(){
             $('.left_nav').animate({marginLeft:'100%'},300);
@@ -45,7 +45,6 @@ $(document).ready(function(){
             $('.nav_store').fadeOut();
         })
     }
-    
     
     //main_best - slide
     var swiper = new Swiper('.main_best .swiper-container', {
@@ -91,16 +90,13 @@ $(document).ready(function(){
         }
     })
     
-    //main_frag
+    //main_frag - ripples plugin
     $('.main_frag .bg').ripples({
         resolution: 512,
         dropRadius: 20,
         perturbance: 1,
     });
-})
-
-$(document).ready(function() {
-	try {
+    try {
 
 		$('.main_frag .bg').ripples({
 			resolution: 128,
@@ -136,4 +132,4 @@ $(document).ready(function() {
 
 		$el.ripples('drop', x, y, dropRadius, strength);
 	}, 400);
-});
+})
